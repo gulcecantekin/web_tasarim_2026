@@ -1,0 +1,89 @@
+/*seçiciler-selectors
+1.etiket(tag) seçiciler*/
+h1,h2{
+    color: blueviolet;
+    background-color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*
+2.CLASS seçici
+*/
+.baslik{
+    color: aquamarine;
+    font-size: 45px;
+}
+/*
+3.ID seçiciler
+*/
+#header{
+    color: brown;
+    font-size: 25px;
+}
+/*
+4.EVRENSEL seçiciler
+bu en başa konur
+*/
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: darksalmon;
+    margin: 0;
+    padding: 0;
+}
+/*
+5.TORUN seçiciler
+elemanların içindeki alt etiketlere ulaşmak için kullanılır
+saadece li yazarsak divin içindekini yapmaz
+div ul li yazarsak sadece divin içindekini yapar
+*/
+div ul li{
+    color: darkolivegreen;
+}
+div ul li a em{
+    color: chocolate;
+}
+/*
+4.ÇOCUK seçiciler
+> işareti a etiketinin içinde direkt em etiketi varsa onu seçer
+*/
+a>em{
+    background-color: gold;
+}
+/*
+4.BİTİŞİK seçiciler:peşpeşe gelen elemanlar seçilir
+p den sonra gelen h1
+*/
+p+h1{
+    background-color: cyan;
+}
+/*
+4.ÖZELLİK seçiciler
+*/
+a[href]{
+    color: palevioletred;
+}
+a[title]{
+    font-weight: 800;
+    color: darkblue;
+}
+input[type="text"]{
+    color: turquoise;
+}
+ul li {
+    list-style-type: none;
+    margin: 10px;
+    float:left;
+    background-color: darkgray;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: orange;
+}
+a:visited{
+    color:green;
+}
+a:active{
+    color:cornflowerblue
+}
